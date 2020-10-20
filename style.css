@@ -182,7 +182,15 @@
             text-decoration: none;
             color: black;
         }
-        
+        .redes{
+            width: 50%;
+            margin-left: 25%;
+        }
+        .redes li{
+            list-style: none;
+            display: inline;
+            margin: 1%;
+        }
         @media screen and (max-width: 800px) {
             .contacto .informacion iframe {
                 margin-left: 5%;
@@ -297,5 +305,8 @@
             header nav ul li a,
             li .oculto {
                 display: block;
+            }
+            .redes li img{
+                width: 25%;
             }
         }
