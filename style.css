@@ -3,6 +3,7 @@
             padding: 0;
             box-sizing: inherit;
         }
+  
         
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
         p,
@@ -11,7 +12,9 @@
         h2 {
             font-family: 'Poppins', sans-serif;
         }
-        
+        .body{
+            width: auto;
+        }
         .logohidden {
             display: none;
         }
@@ -39,7 +42,7 @@
         
         h1 {
             font-size: 40px;
-            color: #5C4004;
+            color: rgb(83, 63, 40);
             margin: 30px;
         }
         
@@ -71,7 +74,6 @@
             width: 35%;
             height: 65%;
         }
-        
         .anuncio img {
             width: 100%;
             height: 65%;
@@ -83,12 +85,11 @@
         
         header {
             width: 100%;
-            background-color: yellow;
+            background-color:rgb(240, 145, 65);
         }
         
         header nav {
             width: 100%;
-            z-index: 1000;
         }
         
         header nav ul {
@@ -103,9 +104,8 @@
             align-content: right;
         }
         
-        header nav ul li:hover {
+        header nav ul li a:hover {
             background: #f9bc26;
-            padding: 10px;
         }
         
         header nav ul li a {
@@ -124,21 +124,19 @@
             margin-left: 5%;
         }
         
-        .footer ul {
+        .bajo {
             display: flex;
             list-style: none;
             width: 100%;
-            color: black;
-            margin-left: 25%;
         }
         
         .footer {
             margin-top: 3%;
-            background-color: yellow;
+            background-color: rgb(230, 135, 55);
         }
         
         body {
-            background-color: #fafafa;
+            background-color: #f7f7f7;
         }
         
         .footer img {
@@ -150,9 +148,13 @@
             font-size: 20px;
         }
         
-        .footer li {
+        .bajo {
             width: auto;
-            margin-left: 15%;
+            margin-left: 40%;
+        }
+        .bajo p{
+            position: relative;
+            top: 15px;
         }
         
         .contacto {
@@ -167,13 +169,13 @@
         }
         
         .contacto .informacion iframe {
-            margin-left: 10%;
+            margin-left: 13%;
         }
         
         .contacto .informacion img {
             width: 5px;
-            height: 100%;
-            margin-left: 10%;
+            height: 1%;
+            margin-left: 10%
         }
         
         .contacto .informacion a {
@@ -190,16 +192,18 @@
                 width: 90%;
                 margin-left: 5%;
             }
-            .footer li {
+            .footer {
                 width: 100%;
             }
             .footer img {
                 width: 10%;
-                height: auto;
-                margin-right: 0;
             }
-            .footer ul {
-                margin-left: 15%;
+            .bajo{
+                width: 100%;
+                margin-left: 35%;
+            }
+            .bajo p{
+                top:0;
             }
             .footer p {
                 font-size: 10px;
@@ -208,7 +212,7 @@
                 padding-top: 12%;
             }
             .oculto {
-                display: block;
+                display: inline;
             }
             .escritorio,
             .logo {
@@ -249,7 +253,7 @@
                 width: 100%;
                 position: fixed;
                 top: 0px;
-                background: yellow;
+                background: rgb(240, 145, 65);
                 align-content: space-between;
             }
             header nav {
@@ -280,9 +284,11 @@
             }
             .mobile-menu img {
                 width: 28%;
+                position: relative;
+                top: 8%;
             }
-            header nav ul li,
-            li .oculto {
+            header nav ul li ,
+            li.oculto a {
                 display: block;
                 border-bottom: 1px solid black;
                 bottom: 0px;
