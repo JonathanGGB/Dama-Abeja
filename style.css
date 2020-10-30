@@ -3,8 +3,6 @@
             padding: 0;
             box-sizing: inherit;
         }
-  
-        
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
         p,
         a,
@@ -20,8 +18,8 @@
         }
         
         a img {
-            width: 5%;
-            height: auto;
+            width: 4%;
+            margin: 0;
         }
         
         .Slides {
@@ -73,10 +71,24 @@
         .informacion2 img {
             width: 35%;
             height: 65%;
+            margin-bottom: 20%;
         }
         .anuncio img {
             width: 100%;
             height: 65%;
+            margin-bottom: 20%;
+        }
+        .anuncio2 img {
+            width: 80%;
+            height: 65%;
+            margin-bottom: 25%;
+        }
+        .anuncio3 img {
+            width: 80%;
+            height: 65%;
+        }
+        .anuncio3{
+            margin-bottom: 20%;
         }
         
         .menu {
@@ -87,34 +99,27 @@
             width: 100%;
             background-color:rgb(240, 145, 65);
         }
-        
-        header nav {
-            width: 100%;
-        }
-        
         header nav ul {
             list-style: none;
+            display: flex;
+            justify-content: space-between;
         }
-        
-        header nav ul li {
-            display: inline-block;
-            position: relative;
-            bottom: 13px;
-            margin-left: 12%;
-            align-content: right;
-        }
-        
         header nav ul li a:hover {
             background: #f9bc26;
+            border-radius: 50%;
+            padding: 5px;
         }
         
         header nav ul li a {
             color: black;
-            display: flex;
             text-decoration: none;
             font-size: 20px;
+            position: relative;
+            top: 30%;
         }
-        
+        img.logo{
+            width: 4%;
+        }
         .oculto {
             display: none;
         }
@@ -161,24 +166,27 @@
             width: 100%;
         }
         
-        .contacto .informacion p {
+        .contacto .informacion1 p {
             margin-left: 10%;
             margin-top: 2%;
             text-align: center;
             text-decoration: none;
         }
-        
-        .contacto .informacion iframe {
+        .contacto .informacion1{
+            margin-bottom: 0;
+            display: flex;
+        }
+        .contacto .informacion1 iframe {
             margin-left: 13%;
         }
         
-        .contacto .informacion img {
+        .contacto .informacion1 img {
             width: 5px;
             height: 1%;
             margin-left: 10%
         }
         
-        .contacto .informacion a {
+        .contacto .informacion1 a {
             text-decoration: none;
             color: black;
         }
@@ -191,7 +199,9 @@
             display: inline;
             margin: 1%;
         }
+ 
         @media screen and (max-width: 800px) {
+            
             .contacto .informacion iframe {
                 margin-left: 5%;
                 width: 90%;
@@ -295,16 +305,337 @@
                 position: relative;
                 top: 8%;
             }
-            header nav ul li ,
+            header nav ul ,
             li.oculto a {
+                display: block;
+            }
+            header nav ul li a,
+            li .oculto {
                 display: block;
                 border-bottom: 1px solid black;
                 bottom: 0px;
                 margin-left: 3%;
             }
+            .redes li img{
+                width: 25%;
+            }
+        }             * {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+        p,
+        a,
+        h1,
+        h2 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .body{
+            width: auto;
+        }
+        .logohidden {
+            display: none;
+        }
+        
+        a img {
+            width: 4%;
+            margin: 0;
+        }
+        
+        .Slides {
+            display: none;
+        }
+        
+        .fades {
+            -webkit-animation-name: fades;
+            -webkit-animation-duration: 1s;
+            animation-name: fades;
+            animation-duration: 1s;
+        }
+        
+        .informacion,
+        .informacion2 {
+            display: flex;
+        }
+        
+        h1 {
+            font-size: 40px;
+            color: rgb(83, 63, 40);
+            margin: 30px;
+        }
+        
+        p {
+            text-justify: justify;
+            font-size: 18px;
+        }
+        
+        .texto {
+            margin-top: 4%;
+            width: 55%;
+            margin-left: 5%;
+        }
+        
+        .texto2 {
+            margin-top: 4%;
+            width: 55%;
+            margin-right: 5%;
+            margin-left: 3%;
+        }
+        
+        strong {
+            font-size: 24px;
+            color: #eab11f;
+        }
+        
+        .informacion img,
+        .informacion2 img {
+            width: 35%;
+            height: 65%;
+            margin-bottom: 20%;
+        }
+        .anuncio img {
+            width: 100%;
+            height: 65%;
+            margin-bottom: 20%;
+        }
+        .anuncio2 img {
+            width: 80%;
+            height: 65%;
+            margin-bottom: 25%;
+        }
+        .anuncio3 img {
+            width: 80%;
+            height: 65%;
+        }
+        .anuncio3{
+            margin-bottom: 20%;
+        }
+        
+        .menu {
+            display: none;
+        }
+        
+        header {
+            width: 100%;
+            background-color:rgb(240, 145, 65);
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        header nav ul li a:hover {
+            background: #f9bc26;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        
+        header nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            position: relative;
+            top: 30%;
+        }
+        img.logo{
+            width: 4%;
+        }
+        .oculto {
+            display: none;
+        }
+        
+        .extra {
+            width: 90%;
+            margin-left: 5%;
+        }
+        
+        .bajo {
+            display: flex;
+            list-style: none;
+            width: 100%;
+        }
+        
+        .footer {
+            margin-top: 3%;
+            background-color: rgb(230, 135, 55);
+        }
+        
+        body {
+            background-color: #f7f7f7;
+        }
+        
+        .footer img {
+            width: 8%;
+        }
+        
+        .footer p {
+            color: black;
+            font-size: 20px;
+        }
+        
+        .bajo {
+            width: auto;
+            margin-left: 40%;
+        }
+        .bajo p{
+            position: relative;
+            top: 15px;
+        }
+        
+        .contacto {
+            width: 100%;
+        }
+        
+        .contacto .informacion1 p {
+            margin-left: 10%;
+            margin-top: 2%;
+            text-align: center;
+            text-decoration: none;
+        }
+        .contacto .informacion1{
+            margin-bottom: 0;
+            display: flex;
+        }
+        .contacto .informacion1 iframe {
+            margin-left: 13%;
+        }
+        
+        .contacto .informacion1 img {
+            width: 5px;
+            height: 1%;
+            margin-left: 10%
+        }
+        
+        .contacto .informacion1 a {
+            text-decoration: none;
+            color: black;
+        }
+        .redes{
+            width: 50%;
+            margin-left: 25%;
+        }
+        .redes li{
+            list-style: none;
+            display: inline;
+            margin: 1%;
+        }
+ 
+        @media screen and (max-width: 800px) {
+            
+            .contacto .informacion iframe {
+                margin-left: 5%;
+                width: 90%;
+            }
+            .contacto .informacion p {
+                width: 90%;
+                margin-left: 5%;
+            }
+            .footer {
+                width: 100%;
+            }
+            .footer img {
+                width: 10%;
+            }
+            .bajo{
+                width: 100%;
+                margin-left: 35%;
+            }
+            .bajo p{
+                top:0;
+            }
+            .footer p {
+                font-size: 10px;
+            }
+            body {
+                padding-top: 12%;
+            }
+            .oculto {
+                display: inline;
+            }
+            .escritorio,
+            .logo {
+                display: none;
+            }
+            .logohidden {
+                display: inline;
+                width: 5%;
+            }
+            .informacion,
+            .informacion2 {
+                flex-direction: column;
+            }
+            .informacion img,
+            .informacion2 img {
+                margin: auto;
+                width: 300px;
+            }
+            .texto {
+                margin-top: 4%;
+                width: 90%;
+            }
+            .texto2 {
+                margin-top: 4%;
+                width: 90%;
+            }
+            p {
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            strong {
+                font-size: 16px;
+            }
+            .menu {
+                display: flex;
+                width: 100%;
+                position: fixed;
+                top: 0px;
+                background: rgb(240, 145, 65);
+                align-content: space-between;
+            }
+            header nav {
+                background-color: whitesmoke;
+                z-index: 10%;
+                margin: 0px;
+            }
+            .menu .mobile-menu,
+            li .oculto {
+                display: block;
+                color: #fff;
+                overflow: hidden;
+                font-size: 25px;
+                font-weight: bold;
+                text-decoration: none;
+            }
+            header nav {
+                width: 70%;
+                position: fixed;
+                right: 100%;
+                margin: 0;
+            }
+            .menu img {
+                width: 18%;
+            }
+            .logohidden {
+                float: right;
+            }
+            .mobile-menu img {
+                width: 28%;
+                position: relative;
+                top: 8%;
+            }
+            header nav ul ,
+            li.oculto a {
+                display: block;
+            }
             header nav ul li a,
             li .oculto {
                 display: block;
+                border-bottom: 1px solid black;
+                bottom: 0px;
+                margin-left: 3%;
             }
             .redes li img{
                 width: 25%;
