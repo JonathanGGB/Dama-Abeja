@@ -126,9 +126,7 @@
         
         .extra {
             width: 90%;
-            margin-left: 5%;
         }
-        
         .bajo {
             display: flex;
             list-style: none;
@@ -202,13 +200,16 @@
  
         @media screen and (max-width: 800px) {
             
-            .contacto .informacion iframe {
+            .contacto .informacion1 iframe {
                 margin-left: 5%;
                 width: 90%;
             }
-            .contacto .informacion p {
+            .contacto .informacion1 p {
                 width: 90%;
                 margin-left: 5%;
+            }
+            .contacto .informacion1{
+                flex-direction: column;
             }
             .footer {
                 width: 100%;
